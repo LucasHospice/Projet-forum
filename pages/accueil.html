@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>58-99 - Accueil</title>
+    <link rel="icon" href="/static/logo.svg">
+    <link rel="stylesheet" href="/static/style/accueil.css">
+    <link rel="stylesheet" href="../static/style/.layout.css">
+    <link rel="stylesheet" href="/static/style/components/postCard.css">
+    <link rel="stylesheet" href="/static/style/filtre.css">
+
+</head>
+
+<body id="scroolloc">
+    {{template "menu"}}
+    <div id="firsthalf">
+        <div id="banner">
+            <div id="box-citation">
+                <h1>"Le courage n'est pas l'absence de peur, mais la capacité de vaincre ce qui fait peur."</h1>
+                <h2>-Nelson Mandela</h2>
+            </div>
+        </div>
+        <div id="posts">
+            <p id="topicList"></p>
+        </div>
+        <div>
+            {{template "filtre"}}
+        </div>
+    </div>
+    <div id="filters"></div>
+</body>
+
+<script type="text/javascript" src="../static/js/accueil.js"></script>
+<script type="text/javascript" src="../static/js/menu.js"></script>
+<script type="text/javascript" src="../static/js/login-signin.js"></script>
+<script type="text/javascript" src="../static/js/filtre.js"></script>
+
+</html>

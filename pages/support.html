@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>58-99 - Support</title>
+    <link rel="icon" href="/static/logo.svg">
+    <link rel="stylesheet" href="/static/style/buttonfooter.css">
+    <link rel="stylesheet" href="/static/style/footer.css">
+    <link rel="stylesheet" href="/static/style/.layout.css">
+    <link rel="stylesheet" href="/static/style/footersupport.css">
+</head>
+
+<body> 
+    {{template "menu"}}
+    <div class="login-box">
+        <h2>Ticket</h2>
+        <form action="/Support"method="post" autocomplete="off">
+          <div class="user-box">
+              <input type="text" name="objetsupport" >
+              <label for="titleticket">Objet de votre requête:</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="corpssupport" >
+            <label for="bodyticket">Corps de votre requête:</label>
+          </div>
+          <button class="custom-btn btn-2">Envoyer</button>
+        </form>
+      </div>
+    </body>
+    {{template "footer"}}
+</html>

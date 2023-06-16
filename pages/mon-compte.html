@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/static/style/mon-compte.css">
+    <link rel="stylesheet" href="/static/style/.layout.css">
+    <link rel="icon" href="/static/logo.svg">
+    <title>58-99 - Mon compte</title>
+</head>
+
+<body>
+    {{template "menu"}}
+
+
+
+
+    <div id="compte">
+
+        <button id="monCompte" class="buttonMenu">Mon compte</button>
+
+        <button id="posts" class="buttonMenu">Mon activité</button>
+
+        <button id="déconnexion" class="buttonMenu" type="submit">Se déconnecter</button>
+
+
+
+
+        <form id="info">
+            <img id="photo">
+            </img>
+            <div id="pseudo">
+                <label>Pseudo :</label>
+                <div class="wrapper">
+                    <div class="input-data">
+                        <p id="PseudoDisplay" style="margin:0 !important"></p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="e-mail">
+                <label>Email :</label>
+                <div class="wrapper">
+                    <div class="input-data">
+                        <p id="EmailDisplay" style="margin:0 !important"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="rang">
+                <label>Téléphone :</label>
+                <div class="wrapper">
+                    <div class="input-data">
+                        <p id="NumberDisplay" style="margin:0 !important"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="liste">
+                <class id="listePosts">
+                    <p>Post 1</p>
+
+                    <p>Post 2</p>
+
+                    <p>Post 3</p>
+                </class>
+            </div>
+            <div id="commentaires">
+                <class>
+                    <p>commentaire</p>
+                    <p>commentaire</p>
+                    <p>commentaire</p>
+                </class>
+            </div>
+
+
+            <div id="déco">
+                <a href="/connexion-inscription">Déconnexion</a>
+            </div>
+            <div id="scroll">
+                <div class="scroll-bg">
+                    <div class="scroll-div" id="postUpvotes">
+                        <div class="scroll-object">
+                            monn
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="badges">
+            <p>Mes badges</p>
+            <div id="badge1"></div>
+            <div id="badge2"></div>
+            <div id="badge3"></div>
+            <div id="badge4"></div>
+            <div id="badge5"></div>
+            <div id="badge6"></div>
+            <div id="badge7"></div>
+
+        </div>
+    </div>
+    <div id="openPopup">
+
+
+
+
+        <div
+            style=" width:40%;height:38%;margin:0 auto;background:#f7f7f7;position:relative;bottom: 5%;display:flex;flex-direction: column;align-items: center; top: 25vh; left: 3vw;" onclick="close()">
+            <a href=""><img src="/static/logo.svg" height="90%;" style="margin: 10px"></a>
+            <h3 style="margin: 5px">Êtes-vous de vouloir vous déconnecter ?</h3>
+            <div style="display:flex; align-items:center; position:relative;right:20px;">
+
+                <a href="/logout" style="margin: 2.5vw;"><button class="buttonPopup">oui</button></a>
+                <a href=""></a><button class="buttonPopup" id="non">non</button></a>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+<script type="text/javascript" src="/static/js/mon-profil.js"></script>
+<script type="text/javascript" src="/static/js/menu.js"></script>
+
+
+</html>
