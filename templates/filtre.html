@@ -1,0 +1,76 @@
+{{define "filtre"}}
+
+
+    <div>
+        <div id="global">
+            <div class="separatedfilters">
+                <div id="catégories">
+                    <p>Filtrer par catégories:</p>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix1" name="catégories" value="feuilleton">
+                        <label for="choix1">Feuilleton</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix2" name="catégories" value="jardin">
+                        <label for="choix2">Jardin</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix3" name="catégories" value="arnaque">
+                        <label for="choix3">Arnaque</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix4" name="catégories" value="education">
+                        <label for="choix4">Education</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix5" name="catégories" value="sante">
+                        <label for="choix5">Santé</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix6" name="catégories" value="poitique">
+                        <label for="choix6">Politique</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix7" name="catégories" value="nostalgie">
+                        <label for="choix7">Nostalgie</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix8" name="catégories" value="complot">
+                        <label for="choix8">Complot</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix9" name="catégories" value="ragot">
+                        <label for="choix9">Ragot</label>
+                    </div>
+                    <div>
+                        <input onclick="filtreCategories(this.value)" type="radio" id="choix10" name="catégories" value="sport">
+                        <label for="choix10">Sport</label>
+                    </div>
+                </div>
+                <div class="others">
+                    <div id="date">
+                        <p>Filtrer par date de création:</p>
+                        <input onclick="croissant(this.value)" type="radio" id="choix1" name="date" value="date">
+                        <label for="choix1">croissant</label>
+                        <input onclick="decroissant(this.value)" type="radio" id="choix2" name="date" value="date">
+                        <label for="choix2">Décroissant</label>
+                    </div>
+                    <div id="like">
+                        <p>Filtrer par nombre de likes:</p>
+                        <input onclick="croissant(this.value)" type="radio" id="choix1" name="nblike" value="upvote">
+                        <label for="choix1">croissant</label>
+                        <input onclick="decroissant(this.value)" type="radio" id="choix2" name="nblike" value="upvote">
+                        <label for="choix2">Décroissant</label>
+                    </div>
+                    <div id="re">
+                        <button onclick="reinitialiser()" type="submit" class="custom-btn btn-5">Réinitialiser</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="topicList"></div>
+
+
+
+{{end}}
