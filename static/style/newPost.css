@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#titre {
+    width: 30vw;
+    height: 4vh;
+    margin: 2vh;
+    padding: 1vh;
+    border-radius: 1vw;
+}
+
+.form-group {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#post-body {
+    width: 70vw;
+    height: 50vh;
+    resize: none;
+    border-radius: 1vw;
+    background-color: lightgrey;
+    overflow-y: scroll;
+    padding: 1vw;
+}

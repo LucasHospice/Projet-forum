@@ -1,0 +1,111 @@
+body {
+    background-color: #253E5C;
+    display: flex;
+    overflow: hidden;
+}
+
+.profilcard {
+    width: 30%;
+    height: 60%;
+    margin: 5% auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#profilavatar {
+    width: 50%;
+    margin: 2% auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+#profilname {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#profilrank {
+    font-size: 28px;
+}
+
+#profilposts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2%;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#profilpostedposts {
+    background-color: #FFE8A4;
+    overflow: auto;
+    height: 80%;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+}
+
+#profillikedposts {
+    background-color: #FFE8A4;
+    overflow: auto;
+    height: 80%;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#profilansweredposts {
+    background-color: #FFE8A4;
+    overflow: auto;
+    height: 80%;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#profilposts h1 {
+    padding-bottom: 2%;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+/* @media screen and (max-width: 1000px) {
+    .profilcard {
+        margin-left: 5%;
+        width: 90%;
+    }
+    #profilposts {
+        margin-top: 40%;
+    }
+    #profilposts h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profilcard {
+        margin-top: 15%;
+        margin-left: 5%;
+        width: 90%;
+        height: 30%;
+    }
+    #profilposts {
+        margin-top: 45%;
+    }
+    #profilposts h1 {
+        font-size: 25px;
+    }
+} */
+
+#global {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}

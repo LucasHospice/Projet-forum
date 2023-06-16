@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    background-color: #698EA2;
+}
+
+#barreHaut {
+    background-color: gray;
+    display: flex;
+    position: fixed;
+    top: 0.5vh;
+    width: 99vw;
+    height: 10vh;
+}
+
+#barreRecherche {
+    display: flex;
+    position: fixed;
+    top: 1vh;
+    left: 30vw;
+    width: 30vw;
+    height: 5vh;
+    margin: auto;
+
+}
+
+#logo {
+    background-color: antiquewhite;
+    display: flex;
+    position: relative;
+    width: 5vw;
+    height: 7vh;
+    top: 2vh;
+    margin-left: 1vw;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+
+#page {
+    height: 100vh;
+    width: 50vw;
+    left: 50vw;
+    position: fixed;
+    background-color: rgb(255, 236, 185);
+}
+
+
+
+#compte {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 30vw;
+    height: 30vh;
+    top: 15vh;
+    left: 1vw;
+    border-radius: 20%;
+}
+
+
+
+
+
+#monCompte {
+
+    font-size: x-large;
+
+
+    position: absolute;
+    top: 2vh;
+    left: 5vw;
+    width: 20vw;
+}
+
+#posts {
+
+    font-size: x-large;
+
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    width: 20vw;
+}
+
+#mesCommentaires {
+
+    font-size: x-large;
+
+    position: absolute;
+    top: 27vh;
+    left: 5vw;
+
+    width: 20vw;
+}
+
+#déconnexion {
+
+    font-size: x-large;
+
+    position: absolute;
+    top: 17vh;
+    left: 5vw;
+    width: 20vw;
+    margin-top: 5vh;
+}
+
+#openPopup {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(59, 59, 59, 0.52);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.popup {
+
+    position: fixed;
+    left: 36vw;
+    top: 16vh;
+    background-color: #00848C;
+    z-index: 10;
+    width: 45vw;
+    height: 43vh;
+    border: 4px solid floralwhite;
+    border-radius: 25%;
+}
+
+.popup h1 {
+    margin: 2vw;
+    margin-top: 15vh;
+}
+
+.buttonPopup {
+    font-size: x-large;
+    background-color: aliceblue;
+    transition: ease-out 0.3s;
+    border-radius: 10px;
+    width: 15vw;
+
+}
+
+.buttonPopup:hover {
+    box-shadow: inset 15vw 0 0 0 black;
+    color: aliceblue;
+}
+
+
+
+.buttonMenu {
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    background-color: aliceblue;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.buttonMenu:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+#info {
+    background-color: #1C1F4C;
+    display: block;
+    position: fixed;
+    width: 47vw;
+    height: 47vh;
+    left: 35vw;
+    top: 15vh
+}
+
+.scroll-bg {
+    position: fixed;
+    top: 20vh;
+    background-color: #1C1F4C;
+    width: 47vw;
+    height: 80vh;
+}
+
+.scroll-div {
+    width: 47vw;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #1C1F4C;
+}
+
+.scroll-object {
+    color: aliceblue;
+}
+
+#scroll {
+    display: none;
+}
+
+#photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5vh;
+    margin-left: 1vw;
+    display: block;
+    text-align: center;
+}
+
+.wrapper {
+    width: 25vw;
+    background-color: aliceblue;
+    position: absolute;
+    top: 3vh;
+}
+
+.wrapper .input-data input {
+    width: 23vw;
+    top: 8vh;
+    margin: 1vw;
+    border: none;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input:focus~label {
+    transform: translateY(-20px);
+
+
+}
+
+.wrapper .input-data label {
+    position: absolute;
+    bottom: 2vh;
+    left: 1vw;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+#pseudo {
+    background-color: aliceblue;
+    display: block;
+    justify-content: space-between;
+    position: fixed;
+    width: 25vw;
+    height: 8vh;
+    top: 20vh;
+    left: 55vw;
+
+}
+
+#e-mail {
+    background-color: aliceblue;
+    display: block;
+    justify-content: space-between;
+    position: fixed;
+    width: 25vw;
+    height: 8vh;
+    top: 35vh;
+    left: 55vw;
+
+
+}
+
+#rang {
+    background-color: aliceblue;
+    display: block;
+    justify-content: space-between;
+    position: fixed;
+    width: 25vw;
+    height: 8vh;
+    top: 50vh;
+    left: 55vw;
+}
+
+#liste {
+    display: none;
+}
+
+#commentaires {
+    display: none;
+}
+
+#déco {
+    background-color: aliceblue;
+    display: none;
+    justify-content: space-between;
+    position: fixed;
+    width: 25vw;
+    height: 10vh;
+    top: 35vh;
+    left: 50vw;
+    font-size: x-large;
+    text-align: center;
+}
+
+#badges {
+    display: block;
+    width: 47vw;
+    height: 20vh;
+    background-color: #FFE8A4;
+    position: fixed;
+    top: 65vh;
+    left: 35vw;
+
+    text-align: center;
+}
+
+#badge1 {
+    width: 5vw;
+    height: 7vh;
+    position: fixed;
+    left: 38vw;
+    top: 72vh;
+    background-color: aliceblue;
+}
+
+#badge2 {
+    width: 5vw;
+    height: 7vh;
+    position: fixed;
+    left: 44vw;
+    top: 72vh;
+    background-color: aliceblue;
+}
+
+#badge3 {
+    width: 5vw;
+    height: 7vh;
+    position: fixed;
+    left: 50vw;
+    top: 72vh;
+    background-color: aliceblue;
+}
+
+#badge4 {
+    width: 5vw;
+    height: 7vh;
+    position: fixed;
+    left: 56vw;
+    top: 72vh;
+    background-color: aliceblue;
+}
+
+#badge5 {
+    width: 5vw;
+    height: 7vh;
+    position: fixed;
+    left: 62vw;
+    top: 72vh;
+    background-color: aliceblue;
+}
+
+#badge6 {
+    width: 5vw;
+    height: 7vh;
+    position: fixed;
+    left: 68vw;
+    top: 72vh;
+    background-color: aliceblue;
+}
+
+#badge7 {
+    width: 5vw;
+    height: 7vh;
+    position: fixed;
+    left: 74vw;
+    top: 72vh;
+    background-color: aliceblue;
+}

@@ -1,0 +1,198 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+#zeub {
+  padding-top: 8%;
+}
+
+
+.grid {
+  padding-top: 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.card {
+  width: 80%;
+  height: 100vh;
+  margin-left: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white;
+}
+
+.cardimg1,
+.cardimg2,
+.cardimg3 {
+  width: 100%;
+  height: 50vh;
+}
+
+.cardimg1 {
+  background-image: url('/static/style/img/wass.jpg');
+  background-size: 175% 75vh;
+  background-position: 50% 15%;
+}
+
+.cardimg2 {
+  background-image: url('/static/style/img/alessa.JPEG');
+  background-size: 150% 100vh;
+  background-position: 50% 5%;
+}
+
+.cardimg3 {
+  background-image: url('/static/img/lucas.jpg');
+  background-position: 30% -15%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.mail {
+  margin-top: 0%;
+  width: 90%;
+  padding: 5%;
+  background-color: black;
+  color: white;
+}
+
+.rs {
+  margin-top: 19%;
+}
+
+.rs a {
+  text-decoration: none;
+  color: #0072b1;
+}
+
+.contenu h1 {
+  margin-top: 5%;
+}
+
+.contenu p {
+  margin-top: 5%;
+}
+
+.contenu {
+  cursor: default;
+}
+
+
+/* //// */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.login-box {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: beige;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: beige;
+  font-size: 12px;
+}
+
+button {
+  margin: 20px;
+  outline: none;
+}
+
+.custom-btn {
+  top: 13vh;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid beige;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-2:after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 6px;
+  width: 90%;
+  height: 70%;
+  border: 1px solid beige;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-2:hover:after {
+  opacity: 1;
+}

@@ -1,0 +1,136 @@
+.postCard {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 20%;
+    /* margin: 5px */
+    
+}
+
+.pp {
+    height: 100px;
+    margin: 1.5%
+}
+
+.middleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow: hidden;
+}
+
+.middleCard h2 {
+    padding-top: 2vh;
+    font-size: 1em;
+    /* background-color: white; */
+    font-family: 'verdana';
+}
+
+.middleCard p {
+    font-size: 0.9em;
+
+    font-family: 'verdana';
+    color: #767676;
+}
+
+.pastilles-wrap {
+    display: flex;
+}
+
+.pastille {
+    height: 21px;
+    width: 20%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+    margin-bottom: 5px;
+    color: linear-gradient(transparent, rgba(255, 255, 255, 0.5));
+}
+
+.rightCard {
+    display: flex;
+    flex-direction: column;
+    width: 11%;
+    font-size: 82%;
+    padding-left: 1%;
+    color: rgb(77, 77, 77)
+}
+
+.vote {
+    width: 80%;
+    height: 50%;
+    padding-left: 20%;
+    align-items: center;
+
+    display: block;
+}
+
+.upvote {
+    width: 25px;
+    height: 10px;
+    /* background-color: black; */
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid #4BC35F;
+    border-bottom: 0;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 800px) {
+    .upvote {
+        width: 15px;
+        margin-right: 10px;
+    }
+}
+
+.upvoteUp {
+    width: 25px;
+    height: 10px;
+    /* background-color: black; */
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid #4BC35F;
+    border-bottom: 0;
+    opacity: 1;
+}
+
+.upvoteUp:hover {
+    opacity: 0.7;
+}
+
+.upvote:hover {
+    opacity: 0.7;
+}
+
+#downvote {
+    display: none;
+    margin-top: 3%;
+    width: 25%;
+    height: 20%;
+    /* background-color: black; */
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid #C15044;
+    border-bottom: 0;
+    transform: rotate(-180deg);
+    opacity: 0.5;
+}
+
+#downvote:hover {
+    opacity: 1;
+}
+
+.upvotenumber {
+    position: absolute;
+    font-size: 150%;
+    /* margin-left: 50%; */
+    margin-left: 18px;
+    margin-top: 12px;
+}

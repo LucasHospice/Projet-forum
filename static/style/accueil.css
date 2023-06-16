@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
+body {
+    background-color: #698EA2;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#firsthalf {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#citation {
+    width: 70%;
+    height: 20%;
+    color: white;
+    font-style: italic;
+    font-family: 'Qwigley', cursive;
+    margin: 15% auto;
+}
+
+#posts {
+    width: 90%;
+    margin: 35% auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.post {
+    width: 90%;
+    height: 15vh;
+    background-color: #FFE8A4;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#banner {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/da4a8e35051401.57176f2e5dbe5.jpg);
+    background-position:bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+    margin: 7.5% auto;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-citation {
+    width: 70%;
+    height: 20%;
+    color: black;
+    font-style: italic;
+    font-family: 'Qwigley', cursive;
+    margin: 15% auto;
+}
+
+#topicList {
+    width: 65%;
+}

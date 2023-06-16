@@ -1,0 +1,23 @@
+body{
+    background-color: beige;
+}
+
+#content {
+    display: flex;
+}
+
+.site-footer{
+    margin-top: 1%;
+    height: 108px;
+}
+
+#blabla{
+    margin-top: 10%;
+    margin-left: 6%;
+    font-family: cursive, sans-serif;
+}
+
+#img {
+    margin-left: 6%;
+    margin-top: 10%;
+}

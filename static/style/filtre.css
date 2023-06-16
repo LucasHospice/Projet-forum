@@ -1,0 +1,119 @@
+* {
+    font-family: Georgia, serif;
+}
+
+#global {
+    background-color: #253E5C;
+    margin-right: 65%;
+    width: 30%;
+    position: absolute;
+    top: 70vh;
+    left: 67vw;
+    display: none;
+}
+
+.separatedfilters {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#catégories {
+    width: 50%;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+#catégories div {
+    margin-bottom: 2%;
+    margin-left: 20%;
+}
+
+#catégories div label {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.others {
+    width: 50%;
+    height: 100%;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(0, 0, 0)
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+    outline: none;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-5 {
+    background: white;
+    color: black;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-5:hover {
+    background: transparent;
+    color: #000;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #000;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
